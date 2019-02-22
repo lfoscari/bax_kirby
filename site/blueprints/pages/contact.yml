@@ -1,0 +1,69 @@
+title: Social
+
+icon: 🏠
+
+options:
+  status: false
+
+columns:
+  - width: 1/2
+    sections:
+      personal_informations:
+        headline: personal_informations
+        type: fields
+        fields:
+          intro:
+            label: Personal Informations
+            type: headline
+
+          address:
+            label: Address
+            type: text
+
+          tel:
+            label: Telephone
+            type: tel
+
+          email:
+            label: Email
+            type: email
+
+  - width: 1/2
+    sections:
+      agent_informations:
+        type: fields
+        fields:
+          a_intro:
+            label: Agent's Informations
+            type: headline
+
+          a_address:
+            label: Address
+            type: text
+
+          a_tel:
+            label: Telephone
+            type: tel
+
+          a_email:
+            label: Email
+            type: email
+
+  - width: 1
+    sections:
+      socials:
+        headline: Social
+        type: fields
+        fields:
+          social_urls:
+            type: structure
+            label: Social platforms
+            fields:
+              name:
+                label: Name
+                type: text
+                width: 1/2
+              url:
+                label: Link
+                type: url
+                width: 1/2

@@ -1,0 +1,61 @@
+Title: Armani
+
+----
+
+Text: A good fucking composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Someday is not a fucking day of the week. Respect your fucking craft. Must-do is a good fucking master. Intuition is fucking important. Learn from fucking criticism. **Don’t fucking lie to yourself**. The graphic designer’s first fucking consideration is always the size and shape of the format, whether for the printed page or for digital display. Widows and orphans are terrible fucking tragedies, both in real life and definitely in typography. What’s important is the fucking drive to see a project through no matter what. Never, never assume that what you have achieved is fucking good enough. Form follows fucking function. You need to sit down and sketch more fucking ideas because stalking your ex on facebook isn’t going to get you anywhere. Can we all just agree as the greater design community to stop fucking talking about Comic Sans altogether? It’s getting fucking old. Fuck. Your rapidograph pens are fucking dried up, the x-acto blades in your bag are rusty, and your mind is dull. Stop clicking your mouse, get messy, go back to
+
+----
+
+Clients: 
+
+- 
+  info: 'Skills: Art Direction, Illustration, Motion Design, Video'
+- 
+  info: 'Client: Giorgio Armani '
+
+----
+
+Credits: 
+
+- 
+  info: 'Directed by: Andrea Bax'
+- 
+  info: 'Producer: Orsola Sofia Giunta'
+- 
+  info: 'Photo: Marco Gazza'
+- 
+  info: 'Concept, Storyboard and Design: Andrea Bax'
+- 
+  info: 'Illustrations and Design: Alessandro Cripsta'
+- 
+  info: 'Animations: Alessandro Iacobino'
+- 
+  info: 'Music: Smider Agency'
+- 
+  info: 'Client: Emporio Armani'
+- 
+  info: 'Agency: Collateral'
+
+----
+
+Date: 2019-02-05 19:30
+
+----
+
+Cover: 
+
+- screenshot-2019-02-04-at-19.13.43.png
+
+----
+
+Cover-gif: 
+
+- gfx_15_new_1_low.gif
+
+----
+
+Author: - luigi.foscari@icloud.com
+
+----
+
+Tags: 

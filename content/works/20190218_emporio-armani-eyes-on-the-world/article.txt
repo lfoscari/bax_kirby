@@ -1,0 +1,49 @@
+Title: Emporio Armani – Eyes on the World
+
+----
+
+Text: I’m proud to present the new Video campaign for Armani Jewels.
+
+----
+
+Clients: 
+
+- 
+  info: 'Client: Armani'
+
+----
+
+Credits: 
+
+- 
+  info: 'Director: Andrea Bax'
+- 
+  info: 'Producer: Orsola Sofia Giunta'
+- 
+  info: 'Photo: Marco Gazza'
+- 
+  info: 'Concept, Storyboard and Design: Andrea Bax'
+- 
+  info: 'Illustrations and Design: Alessandro Cripsta'
+- 
+  info: 'Animations: Alessandro Iacobino'
+- 
+  info: 'Music: Smider Agency'
+- 
+  info: 'Client: Emporio Armani'
+- 
+  info: 'Agency: Collateral'
+
+----
+
+Date: 2019-02-15 20:30
+
+----
+
+Cover: 
+
+- ea_j_stills_1-940x529@2x.jpg
+
+----
+
+Cover-gif: 

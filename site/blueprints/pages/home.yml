@@ -1,0 +1,20 @@
+title: Home
+
+icon: 🏠
+
+options:
+  status: false
+
+fields:
+  rotating_text:
+    label: Rotating text
+    type: textarea
+    width: 1/2
+    buttons: false
+
+  featured_works:
+    label: Feature works
+    type: pages
+    options: query
+    query: site.find("works").children
+    width: 1/2

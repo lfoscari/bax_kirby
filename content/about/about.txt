@@ -1,0 +1,78 @@
+Title: About
+
+----
+
+Intro: Andrea Bax is an (thumbnail: portrait.png word: Italian number: 1) freelance Art (thumbnail: portrait.png word: Director number: 2) and (thumbnail: portrait.png word: Designer number: 3). He is (thumbnail: portrait.png word: Curious number: 4), aesthetic-focused, sensitive to design (thumbnail: portrait.png word: Trends number: 5), gentleman with a background in (thumbnail: portrait.png word: Arts number: 6). His projects are basically focused on Visual Design and (thumbnail: portrait.png word: Animation number: 7). Since '90s.
+
+----
+
+Bio: 
+
+### Bax Who?
+
+Graduated in Graphic Design at Istituto Europeo di Design in Milan. He collaborate from the beginning with the most important Motion Design Studio in Milan, such as FastForward, Ditroit, Bonsaininja Studio. He became Art Director at Revolution Department, in Milan.
+
+Now he is a Freelance Art Director and Designer and always love to share projects with the best team of collaborators at that time.
+
+He works directly with Brands, Advertising Agencies and Design Studios. In continuous search of talented people, if you're interested in just drop a line at (email: welcomebax@gmail.com text: welcomebax@gmail.com)
+
+He has worked for clients, Tv channels and brands like: Mtv, Rai, Sky, Discovery Channel, Google, Redbull, DolceGabbana, Giorgio Armani, Bulgari, Valentino, Gucci, Fendi, Diesel and many more.
+
+----
+
+Cover: 
+
+- portrait.png
+
+----
+
+Default-hover: 
+
+- mharky_2new.jpg
+
+----
+
+Interests: 
+
+- 
+  name: Art Direction
+- 
+  name: Graphic Design
+- 
+  name: Motion Design
+- 
+  name: Brand Identity
+- 
+  name: Video Direction
+- 
+  name: Storyboarding
+- 
+  name: Typography
+- 
+  name: Interaction Design
+- 
+  name: 3d Stuff
+- 
+  name: GIF
+
+----
+
+Awards: 
+
+- 
+  period: 2011-12-14
+  name: >
+    Live visuals for ELITA "Path of the
+    Rythm" @Teatro Franco Parenti, Milano
+    ITALY
+  date: 2011-12-01
+- 
+  period: 2012-04-14
+  name: >
+    Video projection for KEY Kitchen
+    @Fuorisalone SUPERSTUDIO, Milano ITALY
+  date: 2012-04-14
+
+----
+
+Text: Ciao

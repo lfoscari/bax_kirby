@@ -1,0 +1,52 @@
+Title: Contact
+
+----
+
+Address: Via Sciesa 9, 20135 Milano
+
+----
+
+Tel: +39 393 2546619
+
+----
+
+Email: info@andreabax.com
+
+----
+
+A-address: France
+
+----
+
+A-tel: +33.(06).65.29.61.88
+
+----
+
+A-email: julia@jdmotionsolutions.com
+
+----
+
+Social-urls: 
+
+- 
+  name: Instagram
+  url: ""
+- 
+  name: Vimeo
+  url: ""
+- 
+  name: Behance
+  url: ""
+- 
+  name: Facebook
+  url: ""
+- 
+  name: Dribbble
+  url: ""
+- 
+  name: Linkedin
+  url: ""
+
+----
+
+Text: Ciao

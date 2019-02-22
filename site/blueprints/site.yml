@@ -1,0 +1,16 @@
+title: Site
+
+sections:
+  pages:
+    type: pages
+    create: default
+    layout: cards
+
+  # posts:
+  #   type: fields
+  #   fields:
+  #     featured_works:
+  #       label: Latest works
+  #       type: pages
+  #       options: query
+  #       query: page.find("works").children

@@ -1,0 +1,72 @@
+title: About
+
+icon: 🏠
+
+options:
+  status: false
+
+columns:
+  - width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+
+          intro:
+            type: textarea
+            label: Introduction text
+
+          bio:
+            type: textarea
+            label: Bio
+            size: medium
+            help: In questo campo si può scrivere in markdown
+
+          awards:
+            type: structure
+            label: Special Projects and Awards
+            fields:
+              period:
+                type: date
+                label: Date
+                time: false
+                width: 1/3
+              name:
+                type: text
+                label: Description
+                width: 2/3
+
+  - width: 1/3
+    sections:
+      utility:
+        type: fields
+        fields:
+
+          cover:
+            label: Cover image
+            type: files
+            template: gallery
+            multiple: false
+
+          default_hover:
+            label: Default image on bio
+            type: files
+            template: gallery
+            multiple: false
+
+          interests:
+            type: structure
+            label: Interests and Skills
+            fields:
+              name:
+                label: Description
+                type: text
+
+  - width: 1
+    sections:
+      media:
+        label: Media
+        type: files
+        layout: cards
+        cover: true
+        back: black

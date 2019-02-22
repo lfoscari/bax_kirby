@@ -1,0 +1,21 @@
+title: Works
+
+icon: 🏠
+
+options:
+  status: false
+
+sections:
+
+  drafts:
+    headline: Drafts
+    type: pages
+    status: draft
+    templates: article
+
+  published:
+    headline: Published Articles
+    type: pages
+    status: listed
+    templates: article
+    layout: cards
