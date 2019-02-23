@@ -149,17 +149,24 @@ function isWorks () {
 *******************/
 
 function isArticle () {
-  const intro = document.querySelector(".intro"),
-        intro_img = intro.querySelector("img");
-  var t = 0;
+  // const intro = document.querySelector(".intro"),
+  //       intro_img = intro.querySelector("img");
+  // var t = 0;
+  //
+  // intro.onmousemove = function(e) {
+  //   if(( x = e.clientY ) != t) {
+  //     x = 100 - Math.floor( x * 100 / intro.clientHeight );
+  //     intro_img.style.filter = `invert(${x}%)`;
+  //     t = x;
+  //   }
+  // }
 
-  intro.onmousemove = function(e) {
-    if(( x = e.clientY ) != t) {
-      x = 100 - Math.floor( x * 100 / intro.clientHeight );
-      intro_img.style.filter = `invert(${x}%)`;
-      t = x;
-    }
-  }
+  // /* Quando l'utente preme un'immagine questa viene ingrandita */
+  // document.querySelectorAll(".gallery-grid img").forEach(i => {
+  //   i.addEventListener("click", () => {
+  //     i.classList.add("highlight")
+  //   })
+  // })
 }
 
 /*******************

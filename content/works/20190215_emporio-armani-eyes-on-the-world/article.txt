@@ -10,6 +10,12 @@ Clients:
 
 - 
   info: 'Client: Armani'
+- 
+  info: 'Fruit: Apple'
+- 
+  info: 'Animal: Elephant'
+- 
+  info: 'Nations: Quatar'
 
 ----
 

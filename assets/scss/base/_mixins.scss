@@ -82,15 +82,15 @@
   transition: 250ms ease-out $target;
 }
 
-@mixin grid($width) {
-  display: flex;
-  flex-flow: row wrap;
-
-  & > * {
-    flex-basis: $width * 1%;
-    flex-grow: 1;
-  }
-}
+// @mixin grid($width) {
+//   display: flex;
+//   flex-flow: row wrap;
+//
+//   & > * {
+//     flex-basis: $width * 1%;
+//     flex-grow: 1;
+//   }
+// }
 
 @mixin article {
   width: 100%;
@@ -108,70 +108,6 @@
     width: 70%;
   }
 }
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  // display: flex;
-  // flex-wrap: wrap;
-  //
-  // &.justify {
-  //   justify-content: space-around;
-  //   align-items: center;
-  // }
-}
-
-
-
-// .five {
-//   width: 100%;
-//   @include tablet-landscape-up {
-//     width: 50%;
-//   }
-// }
-//
-// .seven {
-//   width: 100%;
-//   @include tablet-landscape-up {
-//     width: 66.666%;
-//   }
-// }
-//
-.three {
-  width: 100%;
-  // @include tablet-landscape-up {
-  //   width: 33.333%;
-  // }
-}
-//
-.four {
-  width: 100%;
-//   @include tablet-landscape-up {
-//     width: 40%;
-//   }
-}
-//
-// .full {
-//   width: 100%;
-// }
-
-// @mixin container-post {
-//   width: 100%;
-//   margin-left: auto;
-//   margin-right: auto;
-//
-//   @include tablet-landscape-up {
-//    width: 75%;
-//   }
-//
-//   @include desktop-up {
-//    width: 50%;
-//   }
-// }
-
-// .container {
-//   @include container;
-// }
 
 @mixin overlay {
   position: absolute;

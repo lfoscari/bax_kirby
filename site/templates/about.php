@@ -24,11 +24,11 @@
 
     <div class="informations about-grid">
 
-      <div class="seven">
+      <div>
         <?= $page->bio()->kirbytext() ?>
       </div>
 
-      <div class="three">
+      <div>
         <h3>Interests and Skills</h3>
         <ul class="lines">
           <?php $items = $page->interests()->toStructure();

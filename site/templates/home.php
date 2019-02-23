@@ -8,7 +8,7 @@
   <?php endforeach ?>
 </p> -->
 
-<main class="container over-width-mobile full-height">
+<main class="container over-width-mobile">
   <a href="works.html" class="project-link">
     <?php
       $items = $page->featured_works()->toPages();

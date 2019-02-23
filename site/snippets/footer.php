@@ -29,6 +29,9 @@
       case "About":
           echo "isAbout()";
           break;
+      default:
+          echo "isArticle()";
+          break;
     } ?>
   </script>
 </body>
