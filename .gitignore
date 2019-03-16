@@ -9,11 +9,16 @@ Icon
 
 /node_modules
 
+# Saving only theme files
+# -----------------------
+
+content
+
 # Temporary files
 # ---------------
 
-# /media/*
-# !/media/index.html
+/media/*
+!/media/index.html
 
 # -------------SECURITY-------------
 # NEVER publish these files via Git!
