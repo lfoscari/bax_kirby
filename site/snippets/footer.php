@@ -10,9 +10,9 @@
     <span style="background-color: #fb4d52"></span>
   </div>
 
-  <?php if($page->title() == 'Social'): ?>
+  <!-- <?php if($page->title() == 'Social'): ?>
     <script src='https://unpkg.com/axios/dist/axios.min.js'></script>
-  <?php endif ?>
+  <?php endif ?> -->
 
   <?= js(['assets/js/bax.js', '@auto']) ?>
   <script type="text/javascript">

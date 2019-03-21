@@ -10,16 +10,33 @@ body {
 }
 
 .white {
-  h1, h2, h3, h4, h5, h6, p, li, span, nav, svg {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  nav,
+  p,
+  span,
+  svg {
     mix-blend-mode: normal !important;
   }
 }
 
-h1, h2, h3, h4, h5, h6, p, li, span, nav, svg {
-  @include blend;
-}
-
-.blend {
+.blend,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+nav,
+p,
+span,
+svg {
   @include blend;
 }
 
@@ -323,7 +340,8 @@ $swatches: 12px;
   .informations {
     color: white;
 
-    h3, p {
+    h3,
+    p {
       margin-bottom: $space / 2;
     }
   }
@@ -360,7 +378,7 @@ ul.lines {
   }
 
   div:hover .emoji {
-    animation: float 0.5s infinite alternate;
+    animation: float .5s infinite alternate;
   }
 
   ul {
@@ -386,22 +404,39 @@ ul.lines {
   }
 }
 
-/* Social page - the wall */
+/* Wall page */
+
+.wall {
+  margin-bottom: $space;
+
+  figure {
+    margin-top: $space;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  // img {
+  //   max-width: 100%;
+  //   max-height: 100%;
+  // }
+}
 
 // TODO: Rifare con la css grid
 
-.social {
-  margin-top: $space * 3;
-  text-align: center;
-
-  .cell {
-    padding-bottom: $space;
-  }
-
-  img {
-    max-width: 100%;
-  }
-}
+// .social {
+//   margin-top: $space * 3;
+//   text-align: center;
+//
+//   .cell {
+//     padding-bottom: $space;
+//   }
+//
+//   img {
+//     max-width: 100%;
+//   }
+// }
 
 /* Article page */
 
@@ -441,9 +476,6 @@ article {
     grid-auto-flow: row dense;
     text-align: center;
     width: 100%;
-    // padding: 0 10px;
-    // max-width: 50em;
-    // margin: $space auto;
 
     img {
       align-self: top;
@@ -497,7 +529,9 @@ article {
   max-width: 100%;
   height: auto;
 
-  embed, iframe, object {
+  embed,
+  iframe,
+  object {
     position: absolute;
     top: 0;
     left: 0;

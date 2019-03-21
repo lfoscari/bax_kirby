@@ -1,0 +1,12 @@
+title: Social
+
+icon: 🏠
+
+options:
+  status: false
+
+sections:
+
+  media:
+    type: files
+    layout: cards

@@ -175,6 +175,8 @@ function isArticle () {
 
 function isSocial () {
 
+  return;
+
   /* Prendo i post di instagram */
 
   var posts = document.querySelector(".social"),
