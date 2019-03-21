@@ -416,7 +416,8 @@ article {
 
   .content {
     @include article;
-    margin: $space auto;
+    margin-top: $space;
+    padding-bottom: $space;
 
     iframe {
       width: 100%;

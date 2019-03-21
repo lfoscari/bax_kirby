@@ -20,6 +20,24 @@ He has worked for clients, Tv channels and brands like: Mtv, Rai, Sky, Discovery
 
 ----
 
+Awards: 
+
+- 
+  period: 2011-12-14
+  name: >
+    Live visuals for ELITA "Path of the
+    Rythm" @Teatro Franco Parenti, Milano
+    ITALY
+  date: 2011-12-01
+- 
+  period: 2012-04-14
+  name: >
+    Video projection for KEY Kitchen
+    @Fuorisalone SUPERSTUDIO, Milano ITALY
+  date: 2012-04-14
+
+----
+
 Cover: 
 
 - portrait.png
@@ -54,24 +72,6 @@ Interests:
   name: 3d Stuff
 - 
   name: GIF
-
-----
-
-Awards: 
-
-- 
-  period: 2011-12-14
-  name: >
-    Live visuals for ELITA "Path of the
-    Rythm" @Teatro Franco Parenti, Milano
-    ITALY
-  date: 2011-12-01
-- 
-  period: 2012-04-14
-  name: >
-    Video projection for KEY Kitchen
-    @Fuorisalone SUPERSTUDIO, Milano ITALY
-  date: 2012-04-14
 
 ----
 
