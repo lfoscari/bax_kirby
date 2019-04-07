@@ -8,6 +8,9 @@
   <?php endforeach ?>
 </p> -->
 
+<div class="blend-fix"></div>
+
+
 <main class="container over-width-mobile">
   <a href="works.html" class="project-link">
     <?php

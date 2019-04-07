@@ -1,6 +1,7 @@
 var colorsources = document.querySelectorAll(".swatches span"),
     container = document.querySelector(".container"),
-    isMobile = window.innerWidth < 980 ? true : false;
+    isTablet = window.innerWidth < 980,
+    isMobile = window.innerWidth < 600;
 
 /*
   Cliccando gli swatches cambia il backgroundColor del container
@@ -26,6 +27,20 @@ colorsources.forEach((s, index) => {
     }
   });
 });
+
+/*
+  Se in mobile il colore della pagina è random rispetto agli swatches
+*/
+
+if(isMobile) {
+  var random_color_index = Math.floor(Math.random() * colorsources.length);
+  var c = document.body.style.backgroundColor = colorsources[random_color_index].style.backgroundColor;
+  if(c == 'rgb(251, 77, 82)') {
+    document.body.classList.add("white");
+  } else {
+    document.body.classList.remove("white");
+  }
+}
 
 /*******************
         HOME
@@ -64,7 +79,7 @@ function isHome () {
 
   var i = 0;
 
-  if (!isMobile) {
+  if (!isTablet) {
 
     var portion = window.innerHeight / projects_images.length;
 
