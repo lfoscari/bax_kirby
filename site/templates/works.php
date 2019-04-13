@@ -5,7 +5,7 @@
       <?php
       $works =  $pages->find("works")->children();
       foreach($works as $work): ?>
-        <?php $word = F::extension($work) == "gif" ? $work : $work->cover()->resize(); ?>
+        <?php F::extension($work) == "gif" ? $work : $work->cover()->resize(); ?>
         <?php if($work->cover_gif()->isNotEmpty()): ?>
           <a class="work gif" href="<?= $work->url() ?>">
             <img class="lazyload" data-src="<?= $work->cover()->toFiles() ?>" data-hover="<?= $work->cover_gif()->toFiles() ?>">
@@ -24,7 +24,7 @@
       <?php
         foreach ($page->children() as $work) {
           foreach ($work->images() as $image) {
-            $word = F::extension($work) == "gif" ? $work : $work->cover()->resize();
+            F::extension($work) == "gif" ? $work : $work->cover()->resize();
             echo '<a class="work"><img class="lazyload blur-up" data-src="' . $image->url() . '"><p>Temporaneo</p></a>';
           }
         }

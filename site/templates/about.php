@@ -16,9 +16,9 @@
   <div class="about">
 
     <div class="introduction">
-      <?= $page->intro()->kirbytext() ?>
+      <?= $page->intro()->resize()->kirbytext() ?>
       <div class="project-link__about">
-        <img class="gun" src="<?= $page->default_hover()->toFiles() ?>" alt="<?= $page->default_hover()->alt() ?>">
+        <img class="gun" src="<?= $page->default_hover()->resize()->toFiles() ?>" alt="<?= $page->default_hover()->alt() ?>">
       </div>
     </div>
 

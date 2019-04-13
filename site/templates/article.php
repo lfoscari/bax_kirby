@@ -32,6 +32,7 @@
       <?php if($page->images()->isNotEmpty()): ?>
         <div class="gallery-grid">
           <?php foreach ($page->images() as $image) {
+            F::extension($image) == "gif" ? $image : $image->cover()->resize();
             $wide = abs($image->ratio() - 1.6) < .4;
             echo '<img class="lazyload blur-up' . ($wide ? ' wide' : '') . '" data-src="' . $image->url() . '">';
           } ?>
