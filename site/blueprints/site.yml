@@ -6,6 +6,17 @@ sections:
     create: default
     layout: cards
 
+  plugin_fields:
+    type: fields
+    fields:
+      doctor:
+        type: doctor
+        label: Perform checks
+  
+      # colorextractor:
+      #  label: Color extractor
+      #  type: colorextractor
+
   # posts:
   #   type: fields
   #   fields:
