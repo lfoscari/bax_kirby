@@ -5,7 +5,6 @@
       <?php
       $works =  $pages->find("works")->children();
       foreach($works as $work): ?>
-        <?php F::extension($work) == "gif" ? $work : $work->cover()->resize(); ?>
         <?php if($work->cover_gif()->isNotEmpty()): ?>
           <a class="work gif" href="<?= $work->url() ?>">
             <img class="lazyload" data-src="<?= $work->cover()->toFiles() ?>" data-hover="<?= $work->cover_gif()->toFiles() ?>">
@@ -20,14 +19,10 @@
       <?php endforeach ?>
 
       <!-- TODO: Remove -->
-
       <?php
-        foreach ($page->children() as $work) {
-          foreach ($work->images() as $image) {
-            F::extension($work) == "gif" ? $work : $work->cover()->resize();
+        foreach ($page->children() as $work)
+          foreach ($work->images() as $image)
             echo '<a class="work"><img class="lazyload blur-up" data-src="' . $image->url() . '"><p>Temporaneo</p></a>';
-          }
-        }
       ?>
 
     </div>

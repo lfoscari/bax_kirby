@@ -18,7 +18,7 @@
       $counter = 0;
     ?>
     <?php foreach ($items as $key => $item): ?>
-      <img src="<?= $item->cover()->resize()->toFile()->url() ?>"
+      <img src="<?= $item->cover()->toFile()->url() ?>"
            alt="<?= $item->title() ?>"
            data-text="<?= $item->title() ?>"
            data-url="<?= $item->url() ?>"
