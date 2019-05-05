@@ -122,15 +122,24 @@ function isAbout () {
   image_target = document.querySelector(".gun"),
   image, temp;
 
-  topics.forEach((t) => {
-    t.addEventListener('mouseover', (event) => {
-      image = event.target.getAttribute('data-image');
-      if(image != temp) {
-        image_target.setAttribute('src', image);
-        image = temp;
-      }
-    })
-  });
+  if(isMobile) {
+    var i = 0;
+    setInterval(() => {
+      image = topics[i].getAttribute('data-image');
+      image_target.setAttribute('src', image);
+      i = ( i + 1 ) % topics.length;
+    }, 750);
+  } else {
+    topics.forEach((t) => {
+      t.addEventListener('mouseover', (event) => {
+        image = event.target.getAttribute('data-image');
+        if(image != temp) {
+          image_target.setAttribute('src', image);
+          image = temp;
+        }
+      })
+    });
+  }
 
 }
 
@@ -190,70 +199,79 @@ function isArticle () {
 
 function isSocial () {
 
-  return;
+  var images = document.querySelectorAll(".wall img");
+  images.forEach(i => {
+    i.addEventListener('click', () => {
+      window.scrollTo({
+        top: i.getBoundingClientRect().top + ( window.pageYOffset || document.documentElement.scrollTop ),
+        left: 0,
+        behavior: 'smooth'
+      });
+    })
+  })
 
-  /* Prendo i post di instagram */
+  // /* Prendo i post di instagram */
 
-  var posts = document.querySelector(".social"),
-      name = 'andrea_bax',
-      howManyPosts = 100;
+  // var posts = document.querySelector(".social"),
+  //     name = 'andrea_bax',
+  //     howManyPosts = 100;
 
 
-  instagramPhotos("#artdirection");
+  // instagramPhotos("#artdirection");
 
-  async function instagramPhotos(tag) {
-    posts.innerHTML = ''
-    const res = []
+  // async function instagramPhotos(tag) {
+  //   posts.innerHTML = ''
+  //   const res = []
 
-    try {
-      const userInfoSource = await axios.get(`https://www.instagram.com/${name}/`)
+  //   try {
+  //     const userInfoSource = await axios.get(`https://www.instagram.com/${name}/`)
 
-      // userInfoSource.data contains the HTML from axios
-      const jsonObject = userInfoSource.data.match(/<script type="text\/javascript">window\._sharedData = (.*)<\/script>/)[1].slice(0, -1),
-            userInfo = JSON.parse(jsonObject),
-            mediaArray = userInfo.entry_data.ProfilePage[0].graphql.user.edge_owner_to_timeline_media.edges;
+  //     // userInfoSource.data contains the HTML from axios
+  //     const jsonObject = userInfoSource.data.match(/<script type="text\/javascript">window\._sharedData = (.*)<\/script>/)[1].slice(0, -1),
+  //           userInfo = JSON.parse(jsonObject),
+  //           mediaArray = userInfo.entry_data.ProfilePage[0].graphql.user.edge_owner_to_timeline_media.edges;
 
-      console.log(mediaArray);
+  //     console.log(mediaArray);
 
-      for (let media of mediaArray) {
-        const node = media.node
+  //     for (let media of mediaArray) {
+  //       const node = media.node
 
-        if ((node.__typename && node.__typename !== 'GraphImage')) {
-          continue
-        }
+  //       if ((node.__typename && node.__typename !== 'GraphImage')) {
+  //         continue
+  //       }
 
-        var isWorkMedia = node.edge_media_to_caption.edges[0].node.text.includes(tag);
+  //       var isWorkMedia = node.edge_media_to_caption.edges[0].node.text.includes(tag);
 
-        if (isWorkMedia) {
+  //       if (isWorkMedia) {
 
-          const p = []
-          if (node.display_url) {
-            p.push(node.display_url)
+  //         const p = []
+  //         if (node.display_url) {
+  //           p.push(node.display_url)
 
-            try {
-              p.push(node.edge_media_to_caption.edges[0].node.text) // caption
-            } catch (e) {}
+  //           try {
+  //             p.push(node.edge_media_to_caption.edges[0].node.text) // caption
+  //           } catch (e) {}
 
-            try {
-              p.push(`https://www.instagram.com/p/${node.shortcode}`)
-            } catch (e) {}
-          }
+  //           try {
+  //             p.push(`https://www.instagram.com/p/${node.shortcode}`)
+  //           } catch (e) {}
+  //         }
 
-          res.push(p)
+  //         res.push(p)
 
-        }
-      }
-    } catch (e) {
-      console.error(`Unable to retrieve photos. Reason: ${e.toString()}`)
-    }
+  //       }
+  //     }
+  //   } catch (e) {
+  //     console.error(`Unable to retrieve photos. Reason: ${e.toString()}`)
+  //   }
 
-    for (i = 0; i < res.length; i++) {
-      posts.innerHTML += `
-        <div class="cell">
-          <img src="${res[i][0]}"/>
-        </div>
-      `;
-    }
-  }
+  //   for (i = 0; i < res.length; i++) {
+  //     posts.innerHTML += `
+  //       <div class="cell">
+  //         <img src="${res[i][0]}"/>
+  //       </div>
+  //     `;
+  //   }
+  // }
 
 }

@@ -58,6 +58,8 @@ svg {
   width: 100%;
   text-align: center;
   z-index: $z2;
+  line-height: 10px;
+  margin-top: -5px;
 
   a {
     @extend h1;
@@ -321,14 +323,14 @@ $swatches: 12px;
 // }
 
 .about-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: $space;
+  display: block;
 
-  .wide {
-    grid-column: 1 / span 2;
-    margin-bottom: $space;
+  @include tablet-landscape-up {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: $space;
   }
+  padding-bottom: $space;
 }
 
 .about {
@@ -429,6 +431,22 @@ ul.lines {
 
 /* Wall page */
 
+.wall {
+  display: grid;
+  grid-gap: $space;
+  padding: $space * 3 $space $space $space;
+
+  img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 100vh;
+    display: block;
+  }
+}
+
+/* Wall page */
+
 // .wall {
 //   margin-bottom: $space;
 //
@@ -516,7 +534,7 @@ article {
   // height: 25vh;
   // width: 100%;
   display: block;
-  padding: $space * 4 $space 0 $space;
+  padding: $space * 3 $space 0 $space;
   margin-bottom: 0;
   // @include blend;
   // .intro-title {

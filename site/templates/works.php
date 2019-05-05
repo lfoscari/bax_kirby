@@ -25,6 +25,20 @@
             echo '<a class="work"><img class="lazyload blur-up" data-src="' . $image->url() . '"><p>Temporaneo</p></a>';
       ?>
 
+      <?php
+        $token = 'your.token';
+        $endpoint = 'users/self/media/recent';
+        $params = [
+            'count' => 4
+        ];
+        $force = false;
+        foreach(site()->instagram($token, $endpoint, $params, $force) as $data) {
+            echo Kirby\Toolkit\Html::img(
+                $data['images']['standard_resolution']['url']
+            );
+        }
+      ?>
+
     </div>
   </main>
 
