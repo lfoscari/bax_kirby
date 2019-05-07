@@ -331,6 +331,10 @@ $swatches: 12px;
     grid-gap: $space;
   }
   padding-bottom: $space;
+
+  .projects {
+    grid-column: span 2;
+  }
 }
 
 .about {

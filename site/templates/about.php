@@ -38,7 +38,7 @@
         </ul>
       </div>
 
-      <div>
+      <div class="projects">
         <h3>Special Projects and Awards</h3>
         <ul class="lines">
           <?php $items = $page->awards()->toStructure();
