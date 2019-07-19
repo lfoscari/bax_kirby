@@ -8,6 +8,7 @@ Icon
 # ---
 
 /node_modules
+assets/node_modules
 
 # Saving only theme files
 # -----------------------

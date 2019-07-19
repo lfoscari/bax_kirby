@@ -7,12 +7,14 @@
       <!-- <div class="intro"> -->
         <!-- <img src="<?= $page->cover()->toFile()->url() ?>" class="lazyload"> -->
         <!-- <div class="intro"> -->
-          <h1 class="intro"><?= $page->title() ?></h1>
+          <!-- <p><?= $page->title() ?></p> -->
           <!-- <p><b>Client</b> Giorgio Armani — <b>Skills</b> Art Direction, Illustration, Motion Design, Video</p> -->
         <!-- </div> -->
       <!-- </div> -->
 
       <div class="content">
+
+      <h1 class="small"><?= $page->title() ?></h1>
 
       <?php if($page->clients()->isNotEmpty()): ?>
         <ul class="lines">
@@ -41,9 +43,8 @@
       <!-- <div class="content"> -->
 
       <?php if($page->credits()->isNotEmpty()): ?>
-        <!-- Far comparire a richiesta -->
-        <ul class="lines">
-          <?php $credits =  $page->credits()->toStructure();
+        <ul class="lines credits half">
+          <?php $credits = $page->credits()->toStructure();
           foreach($credits as $credit): ?>
             <li><?= $credit->info() ?></li>
           <?php endforeach ?>
