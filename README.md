@@ -1,3 +1,5 @@
+Kirby con il tema per Andrea Bax, basato su https://github.com/lfoscari/bax
+
 # Kirby Starterkit
 
 Kirby is a file-based CMS.
